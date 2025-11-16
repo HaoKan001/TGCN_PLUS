@@ -9,11 +9,12 @@ TGCN_PLUS is executed on Linux (ideally Ubuntu 22.04.3).
 
 ### Preprocessing
 
-'''python
-python pretrain_one.py
-'''
+```bash
+python GenerateGlobalDictionary.py
+
+```bash
+python GenerateGlobalDictionary.py
 
 ### Running
 
-```bash
-python pretrain_one.py
+
