@@ -9,6 +9,7 @@ TGCN_PLUS is executed on Linux (ideally Ubuntu 22.04.3).
 
 ### Preprocessing
 
+shengc
 ```bash
 python GenerateGlobalDictionary.py
 ```
