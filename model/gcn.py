@@ -77,9 +77,4 @@ class AdversarialGAT(nn.Module):
 
         domain_logits = self.domain_clf(reversed_feature)
 
-        return x_batch_mmd, defect_prob, x_src_mmd, x_tar_mmd, x_loss_mmd_node
-
-    if type_count == 0:
-        return torch.tensor(0.0, device=src_feats.device)
-    else:
-        return total_mmd / type_count
+        return x_batch_mmd, defect_prob, x_src_mmd, x_tar_mmd
