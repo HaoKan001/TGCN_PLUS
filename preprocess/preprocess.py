@@ -206,15 +206,16 @@ for project in path_projects:
                 contingency_table,
                 alternative='greater'  
             )
-            # if odds_ratio > 1:
-            if p_value < adjusted_alpha or odds_ratio >1 :
+            
+            if odds_ratio >1 :
                 significant_nodes.append(node_type)
             else:
                 no_significant_nodes.append(node_type)
 
         _, vocabulary = load_data(os.path.join('/root/autodl-tmp/', 'global_vocabulary.pkl'))
-        indices = [vocabulary[node] for node in sorted_node_types]
+        indices = [vocabulary[node] for node in significant_nodes]
 
-        dump_data(os.path.join(dump_data_path, f'{project_name}_indices01.pkl'), indices)
+        dump_data(os.path.join(dump_data_path, f'{project_name}_indices.pkl'), indices)
 
         print(indices)
+
