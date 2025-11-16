@@ -77,7 +77,7 @@ def WGNN_test(critical_nodes, test_tar, model, train_graph, test_graph, train_la
     # cls = LinearDiscriminantAnalysis(solver='lsqr', shrinkage='auto')
     # cls = QuadraticDiscriminantAnalysis()
 
-    cls.fit(train_x_pca, train_label.ravel())  # 使用 ravel() 调整标签的形状
+    cls.fit(train_x_pca, train_label.ravel())
     y_pred = cls.predict(test_x_pca)
     y_proba = cls.predict_proba(test_x_pca)[:, 1]
 
@@ -85,8 +85,6 @@ def WGNN_test(critical_nodes, test_tar, model, train_graph, test_graph, train_la
     # cls.fit(train_x, train_label.ravel())
     # y_pred = cls.predict(test_x)
     # y_proba = cls.predict_proba(test_x)[:, 1]
-
-    # y_pred, Zs, Zt, Ps, Pt = unsupervised_stage3(train_x_pca, train_label.ravel(), test_x_pca, r=20, knn_t=8, knn_cross=8, n_iter=4)
 
     # Save Result
     acc.append(accuracy_score(y_true=test_label.ravel(), y_pred=y_pred))
@@ -97,3 +95,4 @@ def WGNN_test(critical_nodes, test_tar, model, train_graph, test_graph, train_la
     precision.append(precision_score(y_true=test_label.ravel(), y_pred=y_pred))
     recall.append(recall_score(y_true=test_label.ravel(), y_pred=y_pred))
     return acc, auc, f1, mcc, gmean, precision, recall
+
