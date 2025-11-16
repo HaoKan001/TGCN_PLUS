@@ -5,7 +5,7 @@ AST-based Subgraph Construction with Noise Reduction for Cross-Project Defect Pr
 
 ### 预处理
 ```bash
-python pretrain_one.py
+python pretrain_one.py ```
 
 ### 运行
 ```bash
