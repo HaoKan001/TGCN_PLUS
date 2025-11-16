@@ -1,11 +1,12 @@
 # TGCN_PLUS
 AST-based Subgraph Construction with Noise Reduction for Cross-Project Defect Prediction
 
-##Quick Start
+## Quick Start
 
-###预处理
+### 预处理
+```bash
+python pretrain_one.py
 
-```python pretrain_one.py```
-
-###运行
-```python run.py```
+### 运行
+```bash
+python run.py
