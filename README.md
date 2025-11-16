@@ -14,3 +14,6 @@ python pretrain_one.py
 '''
 
 ### Running
+
+```bash
+python pretrain_one.py
