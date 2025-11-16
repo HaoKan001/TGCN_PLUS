@@ -9,6 +9,8 @@ TGCN_PLUS is executed on Linux (ideally Ubuntu 22.04.3).
 
 ### Preprocessing
 
-'''python pretrain_one.py
+''' python
+python pretrain_one.py
+'''
 
 ### Running
