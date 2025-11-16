@@ -3,13 +3,12 @@ AST-based Subgraph Construction with Noise Reduction for Cross-Project Defect Pr
 
 ## Requirements
 
-PHSCS is executed on Linux (ideally Ubuntu 22.04.3).
+TGCN_PLUS is executed on Linux (ideally Ubuntu 22.04.3).
 
 ## Quick Start
 
 ### Preprocessing
 
-bash
-python pretrain_one.py '''
+'''python pretrain_one.py
 
 ### Running
