@@ -3,7 +3,7 @@ AST-based Subgraph Construction with Noise Reduction for Cross-Project Defect Pr
 
 ## Requirements
 
-TGCN_PLUS is executed on Linux (Ubuntu 22.04.3).
+TGCN_PLUS is executed on Linux (Python 3.10(ubuntu22.04)).
 
 ## Quick Start
 
