@@ -1,2 +1,2 @@
 # TGCN_PLUS
-AST-based subgraph modeling with noise reduction for cross-project defect prediction
+AST-based Subgraph Construction with Noise Reduction for Cross-Project Defect Prediction
